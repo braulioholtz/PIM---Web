@@ -61,11 +61,14 @@
   <ItemGroup>
     <Content Include="cadastro.aspx" />
     <Content Include="cadastro2.aspx" />
+    <Content Include="cadastronew.aspx" />
+    <Content Include="cadastronew2.aspx" />
     <Content Include="confirma.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.aspx" />
     <Content Include="estilo.css" />
@@ -76,6 +79,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="includes\layout.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pedido.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -102,12 +106,33 @@
     <Compile Include="cadastro2.aspx.designer.cs">
       <DependentUpon>cadastro2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cadastronew.aspx.cs">
+      <DependentUpon>cadastronew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastronew.aspx.designer.cs">
+      <DependentUpon>cadastronew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastronew2.aspx.cs">
+      <DependentUpon>cadastronew2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastronew2.aspx.designer.cs">
+      <DependentUpon>cadastronew2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="confirma.aspx.cs">
       <DependentUpon>confirma.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="confirma.aspx.designer.cs">
       <DependentUpon>confirma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="includes\layout.Master.cs">
+      <DependentUpon>layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="includes\layout.Master.designer.cs">
+      <DependentUpon>layout.Master</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
