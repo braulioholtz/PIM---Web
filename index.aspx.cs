@@ -24,7 +24,7 @@ namespace WebApplication1
             if (bd.verificaLogin(usuario, senha) == true)
             {
                 Page.Session["usuario"] = TextBox1.Text;
-                Page.Session["senha"] = TextBox2.Text;
+                //Page.Session["senha"] = TextBox2.Text;
                 Page.Session.Timeout = 5;
                 Response.Redirect("pedido.aspx"); 
                           

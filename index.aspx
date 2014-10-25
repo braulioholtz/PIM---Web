@@ -23,6 +23,7 @@
         <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar"  CssClass="btn btn-primary" OnClick="btnCadastrar_Click"/>
         <br /><br />&nbsp;&nbsp;
         <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="Red"></asp:Label>
+        <br />
     </form>
     
 </body>

@@ -73,6 +73,7 @@
     <Content Include="index.aspx" />
     <Content Include="estilo.css" />
     <Content Include="meuspedidos.aspx" />
+    <Content Include="meuspedidosnew.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -82,6 +83,7 @@
     <Content Include="includes\layout.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pedido.aspx" />
+    <Content Include="pedidonew.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery.jrumble.1.3.js" />
@@ -148,12 +150,26 @@
     <Compile Include="meuspedidos.aspx.designer.cs">
       <DependentUpon>meuspedidos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="meuspedidosnew.aspx.cs">
+      <DependentUpon>meuspedidosnew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="meuspedidosnew.aspx.designer.cs">
+      <DependentUpon>meuspedidosnew.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pedido.aspx.cs">
       <DependentUpon>pedido.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="pedido.aspx.designer.cs">
       <DependentUpon>pedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pedidonew.aspx.cs">
+      <DependentUpon>pedidonew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pedidonew.aspx.designer.cs">
+      <DependentUpon>pedidonew.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

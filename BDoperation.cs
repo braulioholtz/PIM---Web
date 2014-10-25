@@ -31,7 +31,7 @@ namespace WebApplication1
             bool login;
             
             conecta();
-            cSql = new SqlCommand ("select * from Clientes where email =@email And senha =@senha" ,con);
+            cSql = new SqlCommand ("select id from Clientes where email =@email And senha =@senha" ,con);
             cSql.Parameters.AddWithValue("@email", email);
             cSql.Parameters.AddWithValue("@senha", senha);
 
@@ -39,9 +39,8 @@ namespace WebApplication1
             resp = cSql.ExecuteReader();
 
             if (resp.HasRows)
-            {                
-                login = true;
-                
+            {
+                login = true;   
             }
             else
             {

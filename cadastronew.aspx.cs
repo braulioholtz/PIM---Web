@@ -28,5 +28,20 @@ namespace WebApplication1
             Response.Redirect("cadastro2.aspx");
 
         }
+        public void limpar_click(Object sender, EventArgs e)
+        {
+            TxtBairro.Text = "";
+            TxtCep.Text = "";
+            TxtComplemento.Text = "";
+            TxtnumCasa.Text = "";
+            TxtEnde.Text = "";
+            TxtTel.Text = "";
+
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
