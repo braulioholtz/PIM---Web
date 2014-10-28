@@ -13,16 +13,5 @@ namespace WebApplication1
         {
 
         }
-
-        protected void LinkButton1_Click(object sender, EventArgs e)
-        {
-            Session.Abandon();
-            Response.Redirect("index.aspx");
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("pedido.aspx");
-        }
     }
 }

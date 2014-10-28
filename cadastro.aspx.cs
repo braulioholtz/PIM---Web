@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.SessionState;
 
 namespace WebApplication1
 {
@@ -12,7 +11,6 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
 
         }
 
@@ -26,9 +24,24 @@ namespace WebApplication1
         {
             Page.Session["nome"] = TextBox1.Text;
             Page.Session["email"] = TextBox2.Text;
-            Page.Session["senha"] = TextBox3.Text;       
+            Page.Session["senha"] = TextBox3.Text;
             Response.Redirect("cadastro2.aspx");
-            
+
+        }
+        public void limpar_click(Object sender, EventArgs e)
+        {
+            TxtBairro.Text = "";
+            TxtCep.Text = "";
+            TxtComplemento.Text = "";
+            TxtnumCasa.Text = "";
+            TxtEnde.Text = "";
+            TxtTel.Text = "";
+
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+
         }
     }
 }
