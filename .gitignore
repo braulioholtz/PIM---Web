@@ -1,0 +1,9 @@
+*.dll
+bin/WebApplication1.dll.config
+*.pdb
+*.cache
+obj/*
+bin/*
+*.sln
+*.suo
+packages/*
