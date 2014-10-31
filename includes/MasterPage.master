@@ -1,9 +1,8 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layout.Master.cs" Inherits="WebApplication1.includes.Site1" %>
-
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="includes_MasterPage" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <link href="/Content/bootstrap.css" rel="stylesheet" type="text/css" />
     <script src="/Scripts/jquery-1.9.1.min.js"></script> 
     <script src="/Scripts/bootstrap.min.js"></script>

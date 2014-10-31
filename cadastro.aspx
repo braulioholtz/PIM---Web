@@ -1,7 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/layout.Master" AutoEventWireup="true" CodeBehind="cadastro.aspx.cs" Inherits="WebApplication1.cadastro" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/MasterPage.master" AutoEventWireup="true" CodeFile="cadastro.aspx.cs" Inherits="cadastro" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="col-md-12">
         <asp:Wizard ID="Wizard1" runat="server" Width="100%" StartNextButtonStyle-CssClass="btn btn-success" FinishCompleteButtonStyle-CssClass="btn btn-success" StepNextButtonStyle-CssClass="btn btn-success" FinishPreviousButtonStyle-CssClass="btn btn-default" ActiveStepIndex="0" FinishCompleteButtonText="FinaElizar" StepNextButtonText="PróxiOmo" StartNextButtonText="PróAximo" DisplaySideBar="False">
         <FinishCompleteButtonStyle CssClass="btn btn-success"></FinishCompleteButtonStyle>
@@ -12,7 +13,7 @@
 
         <StepNextButtonStyle CssClass="btn btn-success"></StepNextButtonStyle>
         <WizardSteps>
-            <asp:WizardStep runat="server" title="Dados de Login">
+            <asp:WizardStep ID="WizardStep1" runat="server" title="Dados de Login">
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
                         <span class="sr-only">30% Complete</span>
@@ -33,7 +34,7 @@
 
 
             </asp:WizardStep>
-            <asp:WizardStep runat="server" title="Endereço">
+            <asp:WizardStep ID="WizardStep2" runat="server" title="Endereço">
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
                         <span class="sr-only">30% Complete</span>
@@ -70,7 +71,7 @@
 
             </asp:WizardStep>
 
-            <asp:WizardStep ID="WizardStep1" runat="server" title="Conclusão" StepType="Complete">
+            <asp:WizardStep ID="WizardStep3" runat="server" title="Conclusão" StepType="Complete">
                 <div class="progress">
                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
                         <span class="sr-only">100% Complete</span>
@@ -90,6 +91,5 @@
         </asp:Wizard>
     </div>
 
-                                          
-
 </asp:Content>
+

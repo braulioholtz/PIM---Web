@@ -1,10 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/layout.Master" AutoEventWireup="true" CodeBehind="pedido.aspx.cs" Inherits="WebApplication1.pedido" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/MasterPage.master" AutoEventWireup="true" CodeFile="pedido.aspx.cs" Inherits="pedido" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:Wizard ID="Wizard1" runat="server" Width="100%">
         <WizardSteps>
-            <asp:WizardStep runat="server" title="Step 1">
+            <asp:WizardStep ID="WizardStep1" runat="server" title="Step 1">
                 <div class="col-md-6">
                     <h2>Pedido</h2>
                     <div class="progress">
@@ -50,8 +51,9 @@
                     <textarea id="TextArea1" name="S1"></textarea>
                 </div>
             </asp:WizardStep>
-            <asp:WizardStep runat="server" title="Step 2">
+            <asp:WizardStep ID="WizardStep2" runat="server" title="Step 2">
             </asp:WizardStep>
         </WizardSteps>
     </asp:Wizard>
 </asp:Content>
+

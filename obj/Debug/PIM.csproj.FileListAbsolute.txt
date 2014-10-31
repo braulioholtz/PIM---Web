@@ -3,3 +3,6 @@ C:\Users\rbs-web\Documents\Braulio - Programacao\pim\PIM Web\bin\WebApplication1
 C:\Users\rbs-web\Documents\Braulio - Programacao\pim\PIM Web\obj\Debug\PIM.csprojResolveAssemblyReference.cache
 C:\Users\rbs-web\Documents\Braulio - Programacao\pim\PIM Web\obj\Debug\WebApplication1.dll
 C:\Users\rbs-web\Documents\Braulio - Programacao\pim\PIM Web\obj\Debug\WebApplication1.pdb
+C:\Users\rbs-web\Documents\Braulio - Programacao\pim\PIM---Web\obj\Debug\PIM.csprojResolveAssemblyReference.cache
+C:\Users\rbs-web\Documents\Braulio - Programacao\pim\PIM---Web\obj\Debug\WebApplication1.dll
+C:\Users\rbs-web\Documents\Braulio - Programacao\pim\PIM---Web\obj\Debug\WebApplication1.pdb

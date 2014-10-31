@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/layout.Master" AutoEventWireup="true" CodeBehind="meuspedidos.aspx.cs" Inherits="WebApplication1.meuspedidos" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/MasterPage.master" AutoEventWireup="true" CodeFile="meuspedidos.aspx.cs" Inherits="meuspedidos" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2 id="box">Meus Pedidos</h2>      
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+        <h2 id="box">Meus Pedidos</h2>      
     
-    <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Fazer Pedido" OnClick="Button1_Click" />
+    <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Fazer Pedido" />
     
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=PC-ALEX;Initial Catalog=ADSIIIPizza;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [codPedido], [dataPedido], [valorPedido], [statusEntrega], [tipoEntrega] FROM [Pedidos]"></asp:SqlDataSource>
   
@@ -34,7 +34,7 @@
         </AlternatingItemTemplate>
         <EmptyDataTemplate>
             <table id="Table1" runat="server" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <tr>
+                <tr>
                     <td>Você não tem pedidos.</td>
                 </tr>
             </table>
@@ -101,3 +101,4 @@
         </SelectedItemTemplate>
     </asp:ListView>
 </asp:Content>
+
