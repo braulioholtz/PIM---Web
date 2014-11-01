@@ -18,41 +18,18 @@ public partial class _Default : System.Web.UI.Page
 
     protected void btnEntrar_Click(object sender, EventArgs e)
     {
-        string usuario = TextBox1.Text;
-        string senha = TextBox2.Text;
+        string usuario = txtUsuario.Text;
+        string senha = txtSenha.Text;
         if (bd.verificaLogin(usuario, senha) == true)
         {
-            Page.Session["usuario"] = TextBox1.Text;
-            //Page.Session["senha"] = TextBox2.Text;
-            Page.Session.Timeout = 5;
+            /* @todo Ajustar login */
             Response.Redirect("pedido.aspx");
 
         }
         else
         {
-            //Response.Redirect("index.aspx");
-            Label1.Text = "Usuario ou Senha invalidos";
-
+            lblValida.Text = "Usuario ou Senha invalidos";
         }
-        /*
-    string user = "alex.rocha";
-    string senha = "gamersg3";                     
-
-    if (user == TextBox1.Text && senha == TextBox2.Text)
-    {
-                
-            Page.Session["usuario"] = TextBox1.Text;
-            Page.Session["senha"] = TextBox2.Text;
-            Page.Session.Timeout = 5;
-            Response.Redirect("pedido.aspx");
-                    
-    }
-    else
-    {
-        Label1.Text ="Usuario e senha invalidos";
-        TextBox1.Focus();
-    }
-*/
     }
     protected void btnCadastrar_Click(object sender, EventArgs e)
     {

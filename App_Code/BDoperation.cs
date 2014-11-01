@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data;
 using System.Data.SqlClient;
 
 /// <summary>
@@ -75,5 +76,33 @@ public class BDoperation
 
 
     }
+
+    public DataSet exibePedidos(String user)
+    {
+
+        conecta();
+        
+        DataSet ds = new DataSet();
+
+        try
+        {
+            String sql = "SELECT codPedido, dataPedido, valorPedido, statusEntrega, tipoEntrega FROM Pedidos";
+            SqlDataAdapter adapter = new SqlDataAdapter(sql, con);
+
+            adapter.Fill(ds);
+
+        }
+        catch (Exception ex)
+        {
+
+        }
+
+        fecha();
+
+        return ds;
+
+    }
+
+    
 
 }
