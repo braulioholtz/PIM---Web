@@ -14,21 +14,23 @@
 <body>
     <form id="form1" runat="server">
         <nav class="navbar navbar-inverse" role="navigation">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Ads Pizza</a>
-            </div>
-            <div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.aspx">Pagina Inicial</a></li>
-                    <li class="active"><a href="pedido.aspx">Fazer Pedido</a></li>
-                </ul>
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Ads Pizza</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.aspx">Pagina Inicial</a></li>
+                        <li class="active"><a href="pedido.aspx">Fazer Pedido</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>
-    </div>
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
 </body>
 </html>

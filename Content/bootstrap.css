@@ -1449,6 +1449,8 @@ pre code {
 }
 .col-xs-6 {
   width: 50%;
+    top: 0px;
+    left: 0px;
 }
 .col-xs-5 {
   width: 41.66666667%;
