@@ -5,7 +5,7 @@
 <head id="Head1" runat="server">
     <link href="/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="/Scripts/jquery-1.9.1.min.js"></script> 
-    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Content/bootstrap.min.js"></script>
     <link ="text/css" rel="stylesheet" href="/Content/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
